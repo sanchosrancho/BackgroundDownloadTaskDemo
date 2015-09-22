@@ -12,7 +12,6 @@
 		821B551F1BB0B1A200262A04 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 821B551E1BB0B1A200262A04 /* ViewController.m */; };
 		821B55221BB0B1A200262A04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 821B55201BB0B1A200262A04 /* Main.storyboard */; };
 		821B55241BB0B1A200262A04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 821B55231BB0B1A200262A04 /* Assets.xcassets */; };
-		821B55271BB0B1A200262A04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 821B55251BB0B1A200262A04 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +23,6 @@
 		821B551E1BB0B1A200262A04 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		821B55211BB0B1A200262A04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		821B55231BB0B1A200262A04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		821B55261BB0B1A200262A04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		821B55281BB0B1A200262A04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +62,6 @@
 				821B551E1BB0B1A200262A04 /* ViewController.m */,
 				821B55201BB0B1A200262A04 /* Main.storyboard */,
 				821B55231BB0B1A200262A04 /* Assets.xcassets */,
-				821B55251BB0B1A200262A04 /* LaunchScreen.storyboard */,
 				821B55281BB0B1A200262A04 /* Info.plist */,
 				821B55171BB0B1A200262A04 /* Supporting Files */,
 			);
@@ -135,7 +132,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				821B55271BB0B1A200262A04 /* LaunchScreen.storyboard in Resources */,
 				821B55241BB0B1A200262A04 /* Assets.xcassets in Resources */,
 				821B55221BB0B1A200262A04 /* Main.storyboard in Resources */,
 			);
@@ -163,14 +159,6 @@
 				821B55211BB0B1A200262A04 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		821B55251BB0B1A200262A04 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				821B55261BB0B1A200262A04 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -261,6 +249,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BackgroundDownloadTaskDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sanchosrancho.BackgroundDownloadTaskDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,6 +261,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BackgroundDownloadTaskDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sanchosrancho.BackgroundDownloadTaskDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -297,6 +287,7 @@
 				821B552D1BB0B1A200262A04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

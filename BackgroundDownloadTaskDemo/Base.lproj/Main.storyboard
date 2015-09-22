@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -24,21 +24,10 @@
                                     <constraint firstAttribute="width" constant="200" id="gcw-7c-CP5"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tC3-4x-VlE">
-                                <rect key="frame" x="23" y="550" width="41" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvt-gF-Z9A">
+                                <rect key="frame" x="519" y="550" width="55" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="41" id="n8a-k2-VY1"/>
-                                    <constraint firstAttribute="height" constant="30" id="vDD-Dz-Ijo"/>
-                                </constraints>
-                                <state key="normal" title="Crash"/>
-                                <connections>
-                                    <action selector="crashDidPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kIt-tu-7me"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvt-gF-Z9A">
-                                <rect key="frame" x="540" y="550" width="34" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="34" id="JSK-RS-7hU"/>
+                                    <constraint firstAttribute="width" constant="55" id="JSK-RS-7hU"/>
                                     <constraint firstAttribute="height" constant="30" id="Vux-8s-0SO"/>
                                 </constraints>
                                 <state key="normal" title="Load"/>
@@ -47,21 +36,41 @@
                                 </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tlB-65-D99">
-                                <rect key="frame" x="200" y="168" width="200" height="2"/>
+                                <rect key="frame" x="250" y="168" width="100" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="27h-zT-2Zn"/>
+                                </constraints>
+                                <color key="progressTintColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tC3-4x-VlE">
+                                <rect key="frame" x="16" y="550" width="57" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="n8a-k2-VY1"/>
+                                    <constraint firstAttribute="height" constant="30" id="vDD-Dz-Ijo"/>
+                                </constraints>
+                                <state key="normal" title="Crash"/>
+                                <connections>
+                                    <action selector="crashDidPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kIt-tu-7me"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Wjb-JA-Nvk" firstAttribute="top" secondItem="tlB-65-D99" secondAttribute="bottom" constant="30" id="1IF-cY-1Sl"/>
                             <constraint firstItem="Wjb-JA-Nvk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1wl-if-eoZ"/>
                             <constraint firstItem="tlB-65-D99" firstAttribute="width" secondItem="Wjb-JA-Nvk" secondAttribute="width" id="PMb-g4-lRM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="vvt-gF-Z9A" secondAttribute="trailing" constant="6" id="Skh-hS-uqq"/>
-                            <constraint firstItem="tC3-4x-VlE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="3" id="U63-Sh-7Dz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vvt-gF-Z9A" secondAttribute="trailing" constant="10" id="Skh-hS-uqq"/>
+                            <constraint firstItem="tC3-4x-VlE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="U63-Sh-7Dz"/>
                             <constraint firstItem="tlB-65-D99" firstAttribute="centerX" secondItem="Wjb-JA-Nvk" secondAttribute="centerX" id="VYj-t9-ohZ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tC3-4x-VlE" secondAttribute="bottom" constant="20" id="n5O-kw-yLJ"/>
                             <constraint firstItem="Wjb-JA-Nvk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="r9h-V0-xNX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vvt-gF-Z9A" secondAttribute="bottom" constant="20" id="tsk-li-YHp"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PMb-g4-lRM"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="ibImageView" destination="Wjb-JA-Nvk" id="fPg-5J-Mfp"/>
